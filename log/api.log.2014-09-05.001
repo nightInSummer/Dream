@@ -1,0 +1,4 @@
+2014/08/20 00:00:12 [E] 邮件发送失败：%!(EXTRA *textproto.Error=440 mail from account doesn't conform with authentication (Auth Account:night@isletsacg.com|Mail Account:night@isletsacg.com))
+2014/08/20 00:09:43 [E] 邮件发送失败：%!(EXTRA *textproto.Error=440 mail from account doesn't conform with authentication (Auth Account:night@isletsacg.com|Mail Account:night@isletsacg.com))
+2014/08/31 23:15:35 [E] 邮件发送失败：%!(EXTRA *textproto.Error=501 "MAIL FROM" is non-local account)
+2014/08/31 23:38:18 [E] 邮件发送失败：%!(EXTRA *textproto.Error=501 "MAIL FROM" is non-local account)

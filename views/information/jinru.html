@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/static/css/global.css">
+	<link rel="stylesheet" href="/static/css/animation.css">
+	<link rel="stylesheet" href="/static/css/base.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://unslider.com/unslider.js"></script>
+	<script>
+		$(function() {
+	    	$('.img_news1').unslider({
+	    		speed: 500,
+	    		delay: 3000
+	    	});
+	    	$('.img_news2').unslider({
+	    		speed: 500,
+	    		delay: 3000
+	    	});
+		});
+	</script>
+	<style>
+		#zx-title{
+			widows: 100%;
+			border-bottom: 1px dotted #686868;
+			padding:0px 10px 10px;
+		}
+		#zx-title h1{
+			float: left;
+			width: 100px;
+			padding: 0px 5px;
+		}
+		#zx-title h2{
+			float: left;
+			padding-top: 12px;
+			margin-left: 25px;
+			padding-left: 25px;
+			background: url(/static/img/icon4-24.png) no-repeat 5px -101px;
+		}
+		#zx-title h3{
+			float: right;
+		}
+		#zx-title h2 li{
+			float: left;
+			font-weight: normal;
+		}
+		#zx-title h2 li a{
+			color: #0187C5;
+		}
+		#zx-title h2 span:nth-child(1){
+			
+		}
+		#zx-title h1 span:nth-child(1){
+			font-size: 25px;
+			color: #B66208;
+		}
+		#zx-title h1 span:nth-child(2){
+			font-size: 20px;
+		}
+		.zx-container{
+			margin-top: 10px;
+			background-color: rgba(255, 255, 255, 0.54);
+			box-shadow: 1px 1px 4px #847A7A;
+			padding-top: 5px;
+		}
+		#jinghua h1{
+			margin-bottom: 10px;
+			font-size: 16px;
+			color: #399deb;
+			font-family: '微软雅黑';
+		}
+		#jinghua ul li{
+			height: 70px;
+		}
+		#jinghua ul li img{
+			float: left;
+			display: block;
+		}
+		#jinghua ul li p{
+			font-size: 13px;
+			text-indent: 1em;
+			font-family: 微软雅黑;
+			float: right;
+			width: 135px;
+			padding: 5px;
+		}
+		#zx-paihang{
+			margin: auto;
+			text-align: center;
+		}
+		.zx-nav{
+			width: 97%;
+			background: linear-gradient(to bottom,#5AFFEB,#E2FCFA);
+			color: #FF0000;
+			padding-bottom: 5px;
+			margin: 0px 5px;
+			border-radius: 4px;
+			text-align: left;
+			font-size: 16px;
+			padding-top: 3px;
+		}
+		.icon2{
+			background: url(/static/img/65850616831.gif) no-repeat scroll -148px -121px transparent;
+			display: inline-block;
+			height: 15px;
+			position: relative;
+			top: 3px;
+			width: 15px;
+		}
+		.cate-paihang{
+			cursor: pointer;
+			display: inline-block;
+			font-size: 12px;
+			line-height: 25px;
+			margin: 5px 0;
+			text-align: center;
+			width: 85px;
+		}
+		#zx-paihang ol{
+			text-align: left;
+			list-style: decimal;
+		}
+		.no_1 {
+			color: #D22828;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.no_2 {
+			color: #368A0D;
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.no_3 {
+			color: #167BC9;
+			font-size: 13px;
+			font-weight: bold;
+		}
+		#zx-paihang ol li span{
+			font-family: georgia;
+			display: inline-block;
+			font-family: georgia;
+			height: 24px;
+			margin-left: 3px;
+			width: 20px;
+		}
+		#zx-paihang ol li a{
+			color: #167BC9;
+			display: inline-block;
+			width: 180px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow:ellipsis;
+		}
+		.zx-text{
+			padding: 5px;
+		}
+		.zx-text-title p:nth-child(1){
+			padding-bottom: 16px;
+			font-family: '微软雅黑';
+			font-size: 26px;
+			margin: 10px;
+		}
+		.zx-text-title p:nth-child(2){
+			margin-left: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px dotted #686868;
+		}
+		.zx-text-title p span{
+			font-size: 13px;
+			margin-right:10px; 
+		}
+		.zx-text-title p span:nth-child(1){
+			color: #167BC9;
+		}
+		.zx-text-main{
+			overflow: hidden;
+			width: 100%;
+		}
+		.zx-item-img{
+			text-align: center;
+		}
+		.zx-item-text{
+			font-size: 14px;
+			line-height: 28px;
+			margin: 20px auto;
+			text-align: left;
+			width: 95%;
+			text-indent: 2em;
+		}
+		.between_line {
+			background: url(/static/img/news_line.gif) no-repeat scroll 0 0 transparent;
+			height: 17px;
+			margin: 10px auto 5px;
+			width: 95%;
+		}
+	</style>
+</head>
+<body>
+<!--00-->
+	<div class="m-layer z-show"><table><tbody><tr><td>
+    <article class="lywrap">
+	    <header class="lytt"><h2 class="u-tt">登录</h2><span class="lyclose">×</span></header>
+	    <section class="lyct">
+	        <form action='{{urlfor "CheckController.Login"}}' method="post">
+	        	<table>
+	        		<tr>
+	        			<td>用户名：</td>
+	        			<td><input name="username" type="text"></td>
+	        		</tr>
+	        		<tr>
+	        			<td>密码：</td>
+	        			<td><input name="password" type="text"></td>
+	        		</tr>
+	        		<tr>
+	        			<td>验证码：</td>
+	        			<td><input type="text"></td>
+	        		</tr>
+	        	</table>
+	    </section>
+	    <footer class="lybt">
+	        <div class="lyother">
+	            <p>其他信息，比如提示</p>
+	        </div>
+	        <div class="lybtns">
+	            <button type="submit" class="u-btn button">确定</button>
+	            <button type="button" class="u-btn u-btn-c4 button">取消</button>
+	        </div>
+			</form>
+	    </footer>
+    </article></td></tr></tbody></table>
+	</div>
+	<!--00-->
+	<!-- JiaThis Button BEGIN -->
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1398699536387940&move=0" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+	<div id="g-header">
+		<div class="m-title">
+			<h1 class="m-logo">
+				<a href='{{urlfor "IndexController.Get"}}'>ACG LOGO</a>
+			</h1>
+			<ul>
+				<li><a href='{{urlfor "CheckController.Reg"}}'>注册</a></li>
+				<li>|</li>
+				<li id="login">登录</li>
+				<li>|</li>
+				<li><a href="">游戏专区</a></li>
+				<li>|</li>
+				<li><a href="">社团入驻</a></li>
+				<li>|</li>
+				<li><a href="">作品区</a></li>
+				<li>|</li>
+				<li><a href="">讨论区</a></li>
+				<li>|</li>
+				<li><a href='{{urlfor "InformationController.Enter"}}'>动漫资讯</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="g-container">
+		<div id="zx-title">
+			<h1>
+				<span>动漫</span>
+				<span>资讯</span>
+			</h1>
+			<h2>
+				<ul>
+					<li><h4>您现在的位置是：</h4></li>
+					<li><a href='{{urlfor "IndexController.Get"}}'>首页 ></a></li>
+					<li><a href='{{urlfor "InformationController.Enter"}}'>动漫资讯</a></li>
+				</ul>
+			</h2>
+			<h3>
+				<form action="" style="position: relative;margin-top: 8px;">
+					<input type="text" style="height: 18px;border-radius: 7px;width: 200px;padding-left:7px;" placeholder="二次元">
+					<div class="button" style="position: absolute;top: 1px;right: 0px;font-size:10px;">搜索</div>
+				</form>
+			</h3>
+			<div style="clear:both;width:100%;"></div>
+		</div>
+		<div class="zx-container">
+			<div class="g-mn" style="width:72%;">
+       			<div class="zx-text" id="urlarticle_mylist"></div>
+				<div class='f-cb' id='pagination' style='border:1px solid #ddd;left:33px;top:-15px;width:90%;'></div>
+   			</div>
+    		<div class="g-sd" style="background-color: transparent;width:25%;">
+       			<div id="jinghua">
+       				<h1>精华推荐</h1>
+		       		<ul>
+		       			<li>
+		       				<div class="jhtj">
+		       					<img src="/static/img/zxtj1.png" alt="">
+		       					<p><a href="">专题策划：日式漫画在中国是否受歧视？</a></p>
+		       				</div>
+		       			</li>
+		       			<li>
+		       				<div class="jhtj">
+		       					<img src="/static/img/zxtj3.png" alt="">
+		       					<p><a href="">专题策划：日式漫画在中国是否受歧视？</a></p>
+		       				</div>
+		       			</li>
+		       			<li>
+		       				<div class="jhtj">
+		       					<img src="/static/img/zxtj2.png" alt="">
+		       					<p><a href="">专题策划：日式漫画在中国是否受歧视？</a></p>
+		       				</div>
+		       			</li>
+		       			<li>
+		       				<div class="jhtj">
+		       					<img src="/static/img/zxtj4.png" alt="">
+		       					<p><a href="">专题策划：日式漫画在中国是否受歧视？</a></p>
+		       				</div>
+		       			</li>
+		       		</ul>
+       			</div>
+       			<div id="zx-paihang">
+       				<div class="zx-nav"><span class="icon2"></span>最新资讯排行榜</div>
+       				<div class="cate-paihang" style="background-color: #167BC9;color: #FFF;">本周排行</div>
+       				<div class="cate-paihang">本月排行</div>
+       				<ol>
+       					<li><span class="no_1">1</span><a href="">火影忍者将有重大发遍重大发遍重大发遍</a><span>200</span></li>
+       					<li><span class="no_2">2</span><a href="">火影忍者将有重大发遍重大发遍重大发遍重大发遍</a><span>200</span></li>
+       					<li><span class="no_3">3</span><a href="">火影忍者将有重大发遍</a><span>200</span></li>
+       					<li><span class="no_4">4</span><a href="">火影忍者将有重大发遍</a><span>200</span></li>
+       					<li><span class="no_4">5</span><a href="">火影忍者将有重大发遍</a><span>200</span></li>
+       					<li><span class="no_4">6</span><a href="">火影忍者将有重大发遍</a><span>200</span></li>
+       				</ol>
+       			</div>
+    		</div>
+    		<div style="clear:both;width:100%;"></div>
+		</div>
+	</div>
+	<div id="mfooter">
+			<div id="foot_con">
+				<div class="f_list serve_info">
+					<div class="kefu">
+						<span class="tel_ico"></span>
+						<p class="f20_f">40000000000</p>
+						<p class="f14_f mt4_f">ACG网热线</p>
+					</div>
+					<ol class="busines">
+						<li>周一至周日：08-00-00-00-00-0-0</li>
+					</ol>
+				</div>
+				<div class="f_list">
+					<h4>用户帮助</h4>
+					<ul>
+						<li><a href="">新手指南</a></li>
+						<li><a href="">网站地图</a></li>
+						<li><a href="">意见反馈</a></li>
+					</ul>
+				</div>
+				<div class="f_list">
+					<h4>关于我们</h4>
+					<ul>
+						<li><a href="">关于acg</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">联系方式</a></li>
+					</ul>
+				</div>
+				<div class="f_list">
+					<h4>分享</h4>
+					<ul>
+						<li><a href=""><span class="i_sina">&nbsp;</span>新浪微博</a></li>
+						<li><a href=""><span class="i_sina" style="background-position: -65px 0px;">&nbsp;</span>QQ空间</a></li>
+						<li><a href=""><span class="i_sina" style="background-position: -110px 0px;">&nbsp;</span>腾讯微博</a></li>
+					</ul>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微信</h4>
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微博</h4>					
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微视</h4>					
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+</body>
+<script src="/static/js/jquery.cookie.js"></script>
+<script src="/static/js/global.js"></script>
+<script>
+	$("#login").click(function(){
+		$(".m-layer.z-show").fadeIn();
+	});
+	$(".u-btn-c4").click(function(){
+		$(".m-layer.z-show").fadeOut();
+	});
+	$(".lyclose").click(function(){
+		$(".m-layer.z-show").fadeOut();
+	});
+	var aml = $('#urlarticle_mylist');
+	//生成分页按钮
+	var pa = new Pagination($("#pagination"),{
+		page : 1,
+		allpage : {{.allpage}},
+		url : {{urlfor "InfromationController.Contect"}},
+		start : true
+	},function(data,page){
+		//更新显示
+		aml.html('');
+		for (var i=0;i<data.length;i++){
+			aml.append("<div class='zx-text-main'><div class='item' style='border-top:0px;padding:10px;width:665px;'><div class='item-top'><div class='m-icon'>"+data[i].Type+"</div><div class='t-title'><a href='"+data[i].Url+"' style='color:#2397CD'>"+data[i].Title+"</a></div><div class='t-time' style='font-size: 13px;'>"+data[i].Time+"</div><div class='t-author'>来源:178动漫频道</div><div class='t-more' style='font-size: 13px;'><a href='"+data[i].Url+"'>查看全部</a></div><div style='clear:both;width:100%;margin-bottom:10px;'></div></div><div class='zx-item-img'><img src='"+data[i].Img+"' alt=''></div><p class='zx-item-text'>"+data[i].Short+"[<a href='"+data[i].Url+"' style='color:#2397CD;'>显示详情</a>]</p><div class='between_line'></div></div></div>");
+		}
+		pa.create();
+	});
+	pa.create();
+	$(document.querySelectorAll(".cate-paihang")[0]).mouseover(function(){
+		$(this).css({
+			"backgroundColor":"#167BC9",
+			"color":"#FFF"
+		})
+		$(document.querySelectorAll(".cate-paihang")[1]).css({
+			"backgroundColor":"transparent",
+			"color":"#000"
+		})
+	})
+	$(document.querySelectorAll(".cate-paihang")[1]).mouseover(function(){
+		$(this).css({
+			"backgroundColor":"#167BC9",
+			"color":"#FFF"
+		})
+		$(document.querySelectorAll(".cate-paihang")[0]).css({
+			"backgroundColor":"transparent",
+			"color":"#000"
+		})
+	})
+</script>
+</html>

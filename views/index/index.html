@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/static/css/global.css">
+	<link rel="stylesheet" href="/static/css/animation.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://unslider.com/unslider.js"></script>
+	<script>
+		$(function() {
+	    	$('.img_news1').unslider({
+	    		speed: 500,
+	    		delay: 3000
+	    	});
+	    	$('.img_news2').unslider({
+	    		speed: 500,
+	    		delay: 3000
+	    	});
+		});
+	</script>
+	<style>
+		a:hover{
+			color: #FF8700 !important;
+		}
+		.button{      
+			display: inline-block;
+			background: #DF76AC;
+			padding: 4px 6px;
+			color: #FFFFFF;
+			font-size: 15px;
+			border-radius: 5px;
+			text-shadow: 0 0 1px #000000;
+		}
+		.img_news {
+			overflow: hidden;
+			height: 300px;
+			position: relative;
+			overflow: auto;
+			width: 960px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+		}
+		.img_news2 {
+			overflow: auto;
+			width: 691px;
+			margin-bottom: 10px;
+			display: inline-block;
+		}
+		.img_news1 img{
+			overflow: hidden;
+			width: 100%
+		}
+		.img_news ul li {
+			height: 300px;
+			float: left;
+		}
+		.img_news1 ul li {
+			height: 300px;
+			float: left;
+		}
+		.img_news ul li img{
+			width: 100%;
+		}
+		.img_news2 .img_news_title{
+			color: black;
+			line-height: 100px;
+			position: absolute;
+			width: 640px;
+			height: 100px;
+			background-color: lightgray;
+			opacity: 0.7;
+			font-size: 24px;
+			top: 200px;
+			padding-left: 50px;
+		}
+		.img_news_title{
+			color: black;
+			line-height: 100px;
+			position: absolute;
+			width: 910px;
+			height: 100px;
+			background-color: lightgray;
+			opacity: 0.7;
+			font-size: 30px;
+			top: 200px;
+			padding-left: 50px;
+		}
+		.img_news_title p{
+			margin: 5px;
+			font-size: 15px;
+		}
+		body{
+			background: url(/static/img/dh_bg.jpg) no-repeat center 0px transparent;
+			cursor: url("/static/img/my.cur"), url("/static/img/my.cur"), auto;
+			overflow-x: hidden;
+		}
+		#g-header{
+			width: 100%;
+			background-color: rgba(0, 137, 115, 0.76);
+			height: 60px;
+		}
+		.m-title{
+			width: 960px;
+			margin:0 auto;
+		}
+		.m-logo{
+			float: left;
+			font-size: 40px;
+			margin-top: 10px;
+		}
+		.m-title ul li{
+			margin-top: 35px;
+			float: right;
+			font-size: 15px;
+			font-weight: bold;
+			padding: 5px 10px;
+			position: relative;
+			color: #FFFFFF;
+		}
+		.m-title ul li a{
+			color: #FFFFFF;
+		}
+		/*******/
+		.m-title ul li input{
+			color: #333;
+			border-radius: 15px;
+			background-color: #25906D;
+			outline: 0;
+			font-size: 18px;
+			background: url(/static/img/icon4-24.png) -54px -78px no-repeat;
+			text-indent: 2em;
+		}
+		/*******/
+		.g-container{
+			width: 960px;
+			margin: 20px auto;
+		}
+		.g-mn{
+			width: 72%;
+			float: left;
+		}
+		.g-sd{
+			width: 23%;
+			float: right;
+			background-color: rgba(255, 255, 255, 0.54);
+		}
+		.g-sd1{
+			width: 23%;
+			float: right;
+			background-color: rgba(255, 255, 255, 0.54);
+		}
+		#search{
+			border-top: 1px solid #FF0000;
+		}
+		#person{
+
+		}
+		#person ul{
+
+		}
+		#person ul li{
+			padding: 8px 12px;
+			box-shadow: 1px 1px 4px #847A7A;
+		}
+		#person ul li h4{
+			font-size: 17px;
+		}
+		#person ul li p{
+			margin: 5px;
+		}
+		#person ul li h3{
+			font-size: 15px;
+			border-bottom: 1px solid rgb(0, 137, 115);
+			font-family: 微软雅黑;
+			font-weight: normal;
+			margin-top: 10px;
+			padding-bottom: 5px;
+		}
+		.u-img img{
+			margin: 10px 6px;
+		}
+		.p-text{
+			float: left;
+			padding: 6px 32px;
+			font-size: 15px;
+			background: url(/static/img/i1.png) no-repeat 3px;		
+		}
+		.p-num {
+			float: right;
+			font-size: 15px;
+			padding: 6px 20px;
+		}
+		.u-gimg{
+			background: url(/static/img/tt1.png) no-repeat;
+			height: 52px;
+			margin: 5px 10px;
+		}
+		.u-gimg div{
+			margin: 7px 60px;
+			font-size: 13px;
+			line-height: 23px;
+		}
+		.item{
+			width: 100%;
+			margin-top: 10px;
+			border-top: 1px solid rgb(0, 137, 115);
+			padding-top: 10px;
+			clear: both;
+		}
+		.item-top{
+			width: 100%;
+		}
+		.item-top .m-icon{
+			font-size: 15px;
+			border: 3px solid #FF0000;
+			padding: 5px 10px 5px 5px;
+			border-radius: 1px 15px 0px 1px;
+			font-family: 微软雅黑;
+			box-shadow: 3px 2px 5px #8D8D8D;
+			float: left;
+		}
+		.item-top .t-title{
+			font-size: 20px;
+			color: #0B96A1;
+			font-weight: bold;
+			float: left;
+			margin: 5px 20px;
+			width: 80%;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			text-shadow: 1px -1px 1px #000;
+		}
+		.item-top .t-author{
+			color: #FF4B29;
+			font-size: 15px;
+			margin-left: 41px;
+			float: left;
+		}
+		.item-top .t-time{
+			float: left;
+			font-size: 15px;
+			margin-left: 105px;
+		}
+		.item-top .t-more{
+			float: right;
+			background: url(/static/img/i4.png) no-repeat;
+			padding-left: 20px;
+		}
+		.t-img{
+			float: left;
+			width: 320px;
+			overflow: hidden;
+			height: 150px;
+			margin-left: 20px;
+		}
+		.t-text{
+			float: right;
+			width: 325px;
+			text-indent: 1em;
+			line-height: 25px;
+			overflow: hidden;
+			max-height: 200px;
+		}
+		.t-list{
+			clear: both;
+			width: 100%;
+			border-top: 1px dotted #DFDFDF;
+		}
+		.t-list ul{
+			margin-top: 10px;
+		}
+		.t-list li{
+			float: left;
+			font-size: 15px;
+			margin-left: 20px;
+			margin-bottom: 10px;
+			color: #A6A4A4;1;
+		}
+		.t-list li a{
+			color: #A6A4A4;;
+		}
+		.l-text{
+			width: 273px;
+			text-align: center;
+		}
+		.t-nav{
+			float: right;
+			margin-top: 10px;
+			font-size: 13px;
+		}
+		.t-nav li{
+			float: left;
+			margin-left: 5px;
+		}
+		.t-nav li a{
+			color: #369;
+		}
+		.item-bottom{
+			clear: both;
+			width: 100%;
+			padding-top: 10px;
+		}
+		.tlun{
+			float: left;
+			width: 30%;
+			margin-left: 23px;
+			margin-bottom: 10px;
+		}
+		div.num{
+			top: -15px;
+			left: 158px;
+			position: absolute;
+			padding: 5px;
+			background-color: #FF79E0;
+			border-radius: 5px;
+			font-size: 15px;
+			color: #FFF;
+		}
+		.tlun div:nth-child(1){
+			font-weight: bold;
+			font-size: 12px;
+			position: relative;		
+		}
+		.tlun div:nth-child(2){
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 17px;
+		}
+		.tlun div:nth-child(3){
+			line-height: 13px;
+		}
+		.tlun div:nth-child(4){
+			line-height: 20px;
+		}
+		.shequ{
+			width: 100%;
+			clear: both;
+			padding-top: 10px;
+		}
+		.s-img{
+			width: 240px;
+			float: left;
+			margin-left:23px;
+		}
+		.s-text{
+			float: left;
+			width: 200px;
+			margin-left: 30px;
+		}
+		.s-list{
+			float: right;
+			width: 180px;
+		}
+		.s-list ul{
+			margin: 5px 20px;
+		}
+		.s-list li{
+			line-height: 12px;
+		}
+		.s-text h1,.s-list h1{
+			font-size: 13px;
+			color: #068174;
+			margin-bottom: 5px;
+		}
+		.s-text p{
+			line-height: 18px
+		}
+		.m-list2{line-height:1.5;}
+		.m-list2 li{padding-left:10px;margin-top:5px;}
+		.m-list2 li:first-child{margin-top:0;}
+		.m-list2 li:before{display:inline-block;margin:0 6px 2px -10px;border:2px solid;vertical-align:middle;content:'';
+		}
+		#mfooter{  /*结尾了终于*/
+			width: 100%;
+			background-color: #f5f5f5;
+			border-top: 1px solid #ddd;
+			overflow: hidden;
+			padding: 15px 6px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 14px;
+		}
+		#foot_con{
+			width: 960px;
+			margin: 0 auto;
+		}
+		.service_info {
+			padding-left: 0;
+			padding-top: 16px;
+		}
+		.f_list {
+			float: left;
+			line-height: 26px;
+			padding: 10px 10px 0px 30px;
+		}
+		.f_list .kefu .tel_ico {
+			background: url("/static/img/global.png") no-repeat 0 -111px;
+			height: 40px;
+			width: 36px;
+			float: left;
+		}
+		.f_list ul {
+			float: left;
+			line-height: 26px;
+			padding-top: 6px;
+		}
+		.f_list .kefu p {
+			margin-left: 48px;
+			line-height: 20px;
+		}
+		.f20_f {
+			font-size: 20px;
+		}
+		.mt4_f {
+			margin-top: 4px;
+		}
+		.f14_f {
+			font-size: 14px;
+		}
+		.f_list .business {
+			line-height: 22px;
+			padding-left: 48px;
+			padding-top: 6px;
+		}
+		.i_sina, .g_sina, .i_ren, .g_ren, .i_tx, .i_qzone, .g_qzone, .i_dban, .i_renren, .i_QQ, .i_baidu, .i_wangyi, .i_taobao, .i_house, 
+		.i_comm, .i_mail, .i_notice, .i_mob, .i_cart, .i_order, .i_search, .b_cart, .b_msg {
+			background: url("http://i.meilishuo.net/css/images/header/mls_global140607.png") no-repeat;
+			padding: 1px 8px;
+		}
+		.qr-code img {
+			width: 115px;
+			height: 115px;
+			margin-top: 13px;
+		}
+		#tishi{
+			position: fixed;
+			top: 400px;
+			left: -20px;
+			width: 120px;
+			-webkit-transform: rotate(20deg);
+		}
+		/*#tishi :hover{
+			-webkit-transform-origin-x: 60px;
+			-webkit-transform-origin-y: 120px;
+			-webkit-transform: rotate(20deg);
+			-webkit-transition: all 1s;
+		}*/
+		#info{
+			position: fixed;
+			top: 465px;
+			left: -5px;
+			width: 168px;
+		}
+		#info h1{
+			position: absolute;
+			top: 48px;
+			left: 20px;
+			font-size: 15px;
+			font-family: 微软雅黑;
+		}
+		#info p{
+			font-size: 12px;
+			top: 60px;
+			position: absolute;
+			left: 23px;
+			width: 120px;
+			overflow: hidden;
+			padding: 5px;
+			line-height: 14px;
+			text-indent: 1em;
+			text-shadow: 0px 5px 10px #DFDFDF;
+			height: 66px;
+		}
+		#ceng{
+			position: fixed;
+			width: 100%;
+			height: 1000px;
+			background-color: #DFDFDF;
+			z-index: 1000;
+			background-color:rgba(0, 0, 0, 0.77)
+		}
+		.m-layer{display:none;position:fixed;top:0px;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index: 2000;}
+		.m-layer > table{table-layout:fixed;width:100%;height:100%;}
+		.m-layer > table > tbody > tr > td{vertical-align:middle;}
+		.m-layer .lywrap{position:relative;width:400px;margin:0px auto;margin-right:auto;border:5px solid rgba(0,0,0,0.3);border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.2);}
+		.m-layer .lytt{position:relative;padding:10px;height:20px;margin:0 0 -1px;line-height:20px;border-bottom:1px solid #ddd;border-radius:5px 5px 0 0;background:#fafafa;}
+		.m-layer .lytt h2{float:left;font-size:16px;}
+		.m-layer .lyclose{float:right;font-weight:bold;font-family:arial;font-size:24px;color:#ccc;text-shadow:0 1px #fff;cursor:pointer;}
+		.m-layer .lyclose:hover{color:#aaa;}
+		.m-layer .lyct:last-child,.m-layer .lybt{border-bottom-right-radius:5px;border-bottom-left-radius:5px;}
+		.m-layer .lyct:first-child{border-top-left-radius:5px;border-top-right-radius:5px;}
+		.m-layer .lyct{padding:20px;background:#fff;}
+		.m-layer .lybt{height:30px;line-height:30px;padding:10px;margin:-1px 0 0;border-top:1px solid #ddd;background:#f7f7f7;}
+		.m-layer .lyother{float:left;color:#999;}
+		.m-layer .lybtns{float:right;}
+		.m-layer .lybtns button{float:left;margin-left:10px;}
+		/* 显示 */
+		.m-layer.z-show{display:none;}
+		.lyct td{
+			font-size: 20px;
+			line-height: 35px;
+		}
+		.lyct td input{
+			font-size: 20px;
+			border-radius: 5px;
+		}
+		.lyct td input:focus{
+			box-shadow: 0px 0px 5px #ff0000;
+		}
+		.menu{
+			width:155px;
+			background-color: rgba(0, 137, 115, 0.76);
+			position:absolute;
+			top:60px;
+			left:1091px;
+		}
+		.menu li{
+			width:155px;
+			height:22px;
+		}
+		.menu li:hover{
+			background-color: rgba(0, 137, 115, 0.76);
+		}
+		.cut {
+			height: 0px;
+			border-top: 1px solid black;
+			border-bottom: 1px solid #464646;
+		}
+		.g-update{
+			width: 100%;
+			box-shadow: 0px 0px 4px #797676;
+		}
+		.g-up-title{
+			height: 15px;
+			background: linear-gradient(to bottom,#FFFFFF,#E7E7E7);
+			padding: 5px 10px;
+			border-bottom: 1px solid #7E7B7B;
+		}
+		.g-up-text{
+			padding: 5px;
+		}
+		.g-up-text ul li{
+			background: url("/static/img/global.png") no-repeat -220px -41px;
+			text-indent: 20px;
+			padding-top: 3px;
+			padding-bottom: 5px;
+			line-height: 17px;
+			border-bottom: 1px dashed #CCCCCC;
+		}
+		.g-up-text ul li span{
+			margin-left: 15px;
+			color:#E71414;;
+		}
+		.g-up-left{
+			float: left;
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.g-up-right{
+			float: right;
+			/* font-weight: bold; */
+			color: #FF0000;
+		}
+				/**************************新加的*********************************/
+		#g-nav_pop{
+			position: absolute;
+			top: 60px;
+			left: 870px;
+		}
+		#g-nav_pop ul{
+			z-index: 100;
+		}
+		#g-nav_pop ul li{
+			background-color: rgba(0, 137, 115, 0.76);
+			padding: 5px 14px;
+			width: 50px;
+			font-weight: bold;
+			font-size: 15px;
+			margin-top: 5px;
+			float: none;
+		}
+		#g-nav_pop ul li a{
+			color: #FFFFFF;
+		}
+		#g-nav_pop ul li a:hover{
+			color: #FFFFFF !important;
+		}
+		#g-nav_pop ul li:hover{
+			background-color: rgba(255, 143, 0, 0.81);
+		}
+		#g-nav_pop ul li:nth-child(1){
+			-webkit-transform:translateX(0px);
+			opacity: 0;
+		}
+		#g-nav_pop ul li:nth-child(2){
+			-webkit-transform:translateX(0px);
+			opacity: 0;
+		}
+		/***********************************************************/
+	</style>
+</head>
+<body>
+	<!--00-->
+	<div class="m-layer z-show"><table><tbody><tr><td>
+    <article class="lywrap">
+	    <header class="lytt"><h2 class="u-tt">登录</h2><span class="lyclose">×</span></header>
+	    <section class="lyct">
+	        <form action='{{urlfor "CheckController.Login"}}' method="post">
+	        	<table>
+	        		<tr>
+	        			<td>用户名：</td>
+	        			<td><input name="username" type="text"></td>
+	        		</tr>
+	        		<tr>
+	        			<td>密码：</td>
+	        			<td><input name="password" type="text"></td>
+	        		</tr>
+	        		<tr>
+	        			<td>验证码：</td>
+	        			<td><input type="text"></td>
+	        		</tr>
+	        	</table>
+	    </section>
+	    <footer class="lybt">
+	        <div class="lyother">
+	            <p>其他信息，比如提示</p>
+	        </div>
+	        <div class="lybtns">
+	            <button type="submit" class="u-btn button">确定</button>
+	            <button type="button" class="u-btn u-btn-c4 button">取消</button>
+	        </div>
+			</form>
+	    </footer>
+    </article></td></tr></tbody></table>
+	</div>
+	<!--00-->
+	<!-- JiaThis Button BEGIN -->
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?uid=1398699536387940&move=0" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+	<div id="tishi">
+		<img src="/static/img/daohang.png" alt="" style="width:100%;">
+	</div>
+	<div id="info" class="a-shake">
+		<img src="/static/img/info.png" alt="" style="width:100%;">
+		<h1>站长寄语</h1>
+		<p>真正的爱情不是一时好感，而是明明没有结果，却还是有想要坚持下去的冲动。</p>
+	</div>
+	<div id="g-header">
+		<div class="m-title">
+			<h1 class="m-logo">
+				<a href='{{urlfor "IndexController.Get"}}'>ACG LOGO</a>
+			</h1>
+			<ul  style="position:relative;">
+				<div id="g-more">
+				<li style="background: url(/static/img/point.png) no-repeat -2px 7px;">|</li>
+				<li>更多</li>
+				<li>|</li>
+				</div>
+				<div class="login">
+				<li><a href='{{urlfor "CheckController.Reg"}}'>注册</a></li>
+				<li>|</li>
+				<li id="login">登录</li>
+				<li>|</li>
+				</div>
+				<li><a href="">游戏专区</a></li>
+				<li>|</li>
+				<li><a href="">社团入驻</a></li>
+				<li>|</li>
+				<li><a href="">作品区</a></li>
+				<li>|</li>
+				<li><a href="">讨论区</a></li>
+				<li>|</li>
+				<li><a href='{{urlfor "InformationController.Enter"}}'>动漫资讯</a></li>
+				<!--***************************新加的**********************-->
+				<div id="g-nav_pop">
+					<ul>
+						<li><a href='{{urlfor "CheckController.Out"}}'>退出</a></li>
+						<li><a href="">测试</a></li>
+					</ul>
+				</div>
+				<!--***************************************************-->
+			</ul>
+		</div>
+	</div>
+	<div class="g-container">
+		<div class="g-mn">
+			<div class="img_news img_news2" id='new_new'>
+				<ul>
+					<li><img src="/static/img/l1.jpg" alt=""><div class='img_news_title'>2014年夏季新番动画专题</div></li>
+					<li><img src="/static/img/l2.png" alt=""><div class='img_news_title'>2014年夏季新番动画专题</div></li>
+					<li><img src="/static/img/l3.png" alt=""><div class='img_news_title'>2014年夏季新番动画专题</div></li>
+				</ul>
+			</div>
+			<div class="item">
+				<div class="item-top">
+					<div class="m-icon">
+						作品推荐
+					</div>
+					<div class="t-title">
+						我深爱着我内心的孤独
+					</div>
+					<div class="t-time">
+						2014-06-09
+					</div>
+					<div class="t-author">
+						作者:田光宇
+					</div>
+					<div class="t-more">
+						<a href="">查看全部</a>
+					</div>
+					<div style="clear:both;width:100%;margin-bottom:10px;"></div>
+					<div class="t-img">
+						<img src="/static/img/im1.png" alt="">
+					</div>
+					<div class="t-text">
+						《赤壁乱舞》联合腾讯动漫平台和178动漫频道、动漫之家，召集国内最强的动漫原创力量，设计独具中国特色的游戏卡牌形象!入围画师将有机会赢取iphone6、iphone5s、万元Q币大奖，甚至还有日本之行的机会！
+					</div>
+					<div style="clear:both;width:100%;margin-bottom:10px;"></div>
+					<div class="t-list">
+						<ul>
+							<li>[</li>
+							<li class="l-text"><a href="">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</a></li>
+							<li>]</li>
+							<li>[</li>
+							<li class="l-text"><a href="">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</a></li>
+							<li>]</li>
+							<li>[</li>
+							<li class="l-text"><a href="">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</a></li>
+							<li>]</li>
+							<li>[</li>
+							<li class="l-text"><a href="">啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</a></li>
+							<li>]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-top">
+					<div class="m-icon" style="border-color:#000;">
+						讨论区
+					</div>
+					<div class="t-nav">
+						<ul>
+							<li>论坛版主：</li>
+							<li><a href="">田光宇</a></li>
+							<li><a href="">T-phantom</a></li>
+							<li><a href="">刘小多</a></li>
+							<li><a href="">Hyang</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="item-bottom">
+					<div class="tlun">
+						<div>
+							<img src="/static/img/a1.png" alt="">
+							<div class="num">+20</div>
+						</div>
+						<div>
+							<a href="">轻音乐推荐区</a>
+						</div>
+						<div>
+							<span>主题：2531&nbsp;&nbsp;</span><span> 帖数：213409</span>
+						</div>
+						<div>
+							最后发表：14分钟前
+						</div>
+					</div>
+					<div class="tlun">
+						<div>
+							<img src="/static/img/a2.png" alt="">
+						</div>
+						<div>
+							<a href="">轻音乐推荐区</a>
+						</div>
+						<div>
+							<span>主题：2531&nbsp;&nbsp;</span><span> 帖数：213409</span>
+						</div>
+						<div>
+							最后发表：14分钟前
+						</div>
+					</div>
+					<div class="tlun">
+						<div>
+							<img src="/static/img/a3.png" alt="">
+							<div class="num">+520</div>
+						</div>
+						<div>
+							<a href="">轻音乐推荐区</a>
+						</div>
+						<div>
+							<span>主题：2531&nbsp;&nbsp;</span><span> 帖数：213409</span>
+						</div>
+						<div>
+							最后发表：14分钟前
+						</div>
+					</div>
+					<div class="tlun">
+						<div>
+							<img src="/static/img/a4.png" alt="">
+						</div>
+						<div>
+							<a href="">轻音乐推荐区</a>
+						</div>
+						<div>
+							<span>主题：2531&nbsp;&nbsp;</span><span> 帖数：213409</span>
+						</div>
+						<div>
+							最后发表：14分钟前
+						</div>
+					</div>
+					<div class="tlun">
+						<div>
+							<img src="/static/img/a5.png" alt="">
+						</div>
+						<div>
+							<a href="">轻音乐推荐区</a>
+						</div>
+						<div>
+							<span>主题：2531&nbsp;&nbsp;</span><span> 帖数：213409</span>
+						</div>
+						<div>
+							最后发表：14分钟前
+						</div>
+					</div>
+					<div class="tlun">
+						<div>
+							<img src="/static/img/a6.png" alt="">
+							<div class="num">+1</div>
+						</div>
+						<div>
+							<a href="">轻音乐推荐区</a>
+						</div>
+						<div>
+							<span>主题：2531&nbsp;&nbsp;</span><span> 帖数：213409</span>
+						</div>
+						<div>
+							最后发表：14分钟前
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-top">
+					<div class="m-icon" style="border-color:#EEA101;">
+						社团入住
+					</div>
+					<div class="t-nav">
+						<ul>
+							<li>新入社区：</li>
+							<li><a href="">天使团</a></li>
+							<li>|</li>
+							<li><a href="">有妖气社区</a></li>
+							<li>|</li>
+							<li><a href="">更多</a></li>
+						</ul>
+					</div>
+					<div class="shequ">
+						<div class="s-img">
+							<img src="/static/img/s1.png" alt="">
+						</div>
+						<div class="s-text">
+							<h1>天使笔记社团</h1>
+							<p>舍长：刘小多</p>
+							<p>简介：啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+						</div>
+						<div class="s-list m-list2">
+							<h1>最新动态</h1>
+							<ul>
+								<li>啊啊啊啊啊啊啊啊啊</li>
+								<li>啊啊啊啊啊啊啊啊啊</li>
+								<li>啊啊啊啊啊啊啊啊啊</li>
+							</ul>
+						</div>
+					</div>
+					<div class="shequ">
+						<div class="s-img">
+							<img src="/static/img/s1.png" alt="">
+						</div>
+						<div class="s-text">
+							<h1>天使笔记社团</h1>
+							<p>舍长：刘小多</p>
+							<p>简介：啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+						</div>
+						<div class="s-list m-list2">
+							<h1>最新动态</h1>
+							<ul>
+								<li>啊啊啊啊啊啊啊啊啊</li>
+								<li>啊啊啊啊啊啊啊啊啊</li>
+								<li>啊啊啊啊啊啊啊啊啊</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="g-sd">
+			<div id="person">
+				<ul>
+					<li>
+						<h4>T-phantom</h4>
+						<p>758962035@qq.com</p>
+					</li>
+					<li>
+						<div class="p-text">文章</div><div class="p-num">0</div><div style="clear:both;"></div>
+						<div class="p-text" style="background: url(/static/img/i2.png) no-repeat 3px;	">私信</div><div class="p-num"></div><div style="clear:both;"></div>
+					</li>
+					<li>
+						<div class="p-text">收藏</div><div class="p-num"><img src="/static/img/i3.png" alt=""></div><div style="clear:both;"></div>
+					</li>
+					<li>
+						<h3>关注的人：</h3>
+						<div class="u-gimg">
+							<div><a href="">田光宇</a></div>
+							<div>758962035@qq.com</div>
+						</div>
+						<div class="u-gimg">
+							<div><a href="">田光宇</a></div>
+							<div>758962035@qq.com</div>
+						</div>
+						<div class="u-gimg">
+							<div><a href="">田光宇</a></div>
+							<div>758962035@qq.com</div>
+						</div>
+					</li>
+					<li>
+						<h3>最近来访：<span>（191）</span></h3>
+						<div class="u-img">
+							<img src="/static/img/t1.png" alt="">
+							<img src="/static/img/t2.png" alt="">
+							<img src="/static/img/t3.png" alt="">
+							<img src="/static/img/t4.png" alt="">
+							<img src="/static/img/t5.png" alt="">
+							<img src="/static/img/t6.png" alt="">
+							<img src="/static/img/t7.png" alt="">
+							<img src="/static/img/t3.png" alt="">
+							<img src="/static/img/t4.png" alt="">
+							<img src="/static/img/t5.png" alt="">
+							<img src="/static/img/t6.png" alt="">
+							<img src="/static/img/t1.png" alt="">
+							<img src="/static/img/t2.png" alt="">
+							<img src="/static/img/t3.png" alt="">
+							<img src="/static/img/t4.png" alt="">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="g-sd1">
+			<div class="g-update">
+				<div class="g-up-title">
+					<div class="g-up-left">
+						最新文章
+					</div>
+					<div class="g-up-right">
+						>>更多
+					</div>
+				</div>
+				<div class="g-up-text">
+					<ul>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+						<li><a href="">最终幻想XX不知所措</a><span>2014-05-25</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<div id="mfooter">
+			<div id="foot_con">
+				<div class="f_list serve_info">
+					<div class="kefu">
+						<span class="tel_ico"></span>
+						<p class="f20_f">40000000000</p>
+						<p class="f14_f mt4_f">ACG网热线</p>
+					</div>
+					<ol class="busines">
+						<li>周一至周日：08-00-00-00-00-0-0</li>
+					</ol>
+				</div>
+				<div class="f_list">
+					<h4>用户帮助</h4>
+					<ul>
+						<li><a href="">新手指南</a></li>
+						<li><a href="">网站地图</a></li>
+						<li><a href="">意见反馈</a></li>
+					</ul>
+				</div>
+				<div class="f_list">
+					<h4>关于我们</h4>
+					<ul>
+						<li><a href="">关于acg</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">联系方式</a></li>
+					</ul>
+				</div>
+				<div class="f_list">
+					<h4>分享</h4>
+					<ul>
+						<li><a href=""><span class="i_sina">&nbsp;</span>新浪微博</a></li>
+						<li><a href=""><span class="i_sina" style="background-position: -65px 0px;">&nbsp;</span>QQ空间</a></li>
+						<li><a href=""><span class="i_sina" style="background-position: -110px 0px;">&nbsp;</span>腾讯微博</a></li>
+					</ul>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微信</h4>
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微博</h4>					
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微视</h4>					
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+</body>
+<script src="/static/js/jquery.cookie.js"></script>
+<script src="/static/js/jquery.get.js"></script>
+<script>
+	$("#login").click(function(){
+		$(".m-layer.z-show").fadeIn();
+	});
+	$(".u-btn-c4").click(function(){
+		$(".m-layer.z-show").fadeOut();
+	});
+	$(".lyclose").click(function(){
+		$(".m-layer.z-show").fadeOut();
+	});
+		/******************************新加的*************************************/
+	var onbutton=$("#g-more");
+	var t1=$("#g-nav_pop ul li:nth-child(1)");
+	var t2=$("#g-nav_pop ul li:nth-child(2)");
+	onbutton.click(function(){
+		if(t1.css("opacity")==0){
+			onbutton.css({
+				color:"#FF8700"
+			})
+			t1.attr({"class":"a-bounceinL"});
+			t2.attr({"class":"a-bounceinR"});
+			t1.css({
+				"opacity":1
+			})
+			t2.css({
+				"opacity":1
+			})
+		}else{
+			onbutton.css({
+				color:"#FFF"
+			})
+			t1.attr({"class":"a-bounceoutL"});
+			t2.attr({"class":"a-bounceoutR"});
+			t1.css({
+				"opacity":0
+			})
+			t2.css({
+				"opacity":0
+			})
+		}
+	})
+	/****************************************************************/
+	var test = $.query.get('get');
+	if(test){
+		alert(test);
+	}
+	if($.cookie('WOKUNAME')){
+		if($.cookie('WOKUNAME') == 'null'){
+		$(".login").show();
+		$("#g-more").hide();
+		$(".g-sd").hide();
+		$(".g-sd1").show();
+		}else{
+			$(".login").hide();
+			$(".g-sd1").hide();
+		}
+	}
+	if(!$.cookie('WOKUNAME')){
+		$(".g-sd").hide();
+		$("#g-more").hide();
+	}
+	/*$("#tishi").mouseover(function(){
+		document.querySelector("#tishi").style["webkitTransform"]="rotate(30deg)";
+		$(this).animate({
+			"left":"-25px"
+		},function(){
+			$("#info").show();
+		})
+		/*setTimeout(function(){
+			$("#info").css("display","block");
+		},500)*/
+	/*}).mouseout(function(){
+		document.querySelector("#tishi").style["webkitTransform"]="rotate(0deg)";
+		$("#info").hide();
+	})*/
+</script>
+</html>

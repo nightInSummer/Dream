@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/static/css/global.css">
+	<link rel="stylesheet" href="/static/css/animation.css">
+	<link rel="stylesheet" href="/static/css/base.css">
+	<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/scrollable.js"></script>
+	<style type="text/css">
+		form input:focus{
+			border-color:#8CE7E7; 
+		}
+		.g-register{
+			width: 960px;
+			min-height: 600px;
+			border-radius: 10px;
+			margin: 30px auto 0 auto;
+			background: #fafafa;
+		}
+		.g-r-title{
+			margin: 4px 20px;
+			padding-top: 15px;
+			padding-left: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #d3d3d3;
+			font-size: 18px;
+			color: #a84c10;
+		}
+		#wizard {
+			border:5px solid #789;
+			font-size:12px;
+			height:400px;
+			margin:20px auto;
+			width:570px;
+			overflow:hidden;
+			position:relative;
+			-moz-border-radius:5px;
+			-webkit-border-radius:5px;
+		}
+		#wizard .items {
+			width:20000px;
+			clear:both;
+			position:absolute;
+		}
+		#wizard .right {
+			float:right;
+		}
+		#wizard #status {
+			height:35px;
+			background:#123;
+			padding-left:25px !important;
+		}
+		#status li {
+			float:left;
+			color:#fff;
+			padding:10px 30px;
+		}
+		#status li.active {
+			background-color:#369;
+			font-weight:normal;
+		}
+		.input {
+			width:240px;
+			height:18px;
+			margin:10px auto;
+			line-height:20px;
+			border:1px solid #d3d3d3;
+			padding:2px
+		}
+		.page {
+			padding:20px 30px;
+			width:500px;
+			float:left;
+		}
+		.page h3 {
+			height:42px;
+			font-size:16px;
+			border-bottom:1px dotted #ccc;
+			margin-bottom:20px;
+			padding-bottom:5px
+		}
+		.page h3 em {
+			font-size:12px;
+			font-weight:500;
+			font-style:normal
+		}
+		.page p {
+			line-height:24px;
+		}
+		.page p label {
+			font-size:14px;
+			display:block;
+		}
+		.btn_nav {
+			height:36px;
+			line-height:36px;
+			margin:20px auto;
+		}
+		.prev,.next {
+			width:100px;
+			height:32px;
+			line-height:32px;
+			border:1px solid #d3d3d3;
+			cursor:pointer
+		}
+		.menu{
+			width:155px;
+			background-color: rgba(0, 137, 115, 0.76);
+			position:absolute;
+			top:60px;
+			left:1091px;
+		}
+		.menu li{
+			width:155px;
+			height:22px;
+		}
+		.menu li:hover{
+			background-color: rgba(0, 137, 115, 0.76);
+		}
+		.cut {
+			height: 0px;
+			border-top: 1px solid black;
+			border-bottom: 1px solid #464646;
+		}
+</style>
+</head>
+<body>
+<!--00-->
+	<div class="m-layer z-show"><table><tbody><tr><td>
+    <article class="lywrap">
+	    <header class="lytt"><h2 class="u-tt">登录</h2><span class="lyclose">×</span></header>
+	    <section class="lyct">
+	        <form action='{{urlfor "CheckController.Login"}}' method="post">
+	        	<table>
+	        		<tr>
+	        			<td>用户名：</td>
+	        			<td><input name="username" type="text"></td>
+	        		</tr>
+	        		<tr>
+	        			<td>密码：</td>
+	        			<td><input name="password" type="text"></td>
+	        		</tr>
+	        		<tr>
+	        			<td>验证码：</td>
+	        			<td><input type="text"></td>
+	        		</tr>
+	        	</table>
+	    </section>
+	    <footer class="lybt">
+	        <div class="lyother">
+	            <p>其他信息，比如提示</p>
+	        </div>
+	        <div class="lybtns">
+	            <button type="submit" class="u-btn button">确定</button>
+	            <button type="button" class="u-btn u-btn-c4 button">取消</button>
+	        </div>
+			</form>
+	    </footer>
+    </article></td></tr></tbody></table>
+	</div>
+	<!--00-->
+	<div id="g-header">
+		<div class="m-title">
+			<h1 class="m-logo">
+				<a href="">ACG LOGO</a>
+			</h1>
+			<ul>
+				<div class="more">
+				<ul class="menu" style="display:none">
+					<li style="margin-top:0px;padding:0px;"><a href='{{urlfor "CheckController.Out"}}' style="display: block;padding-top:5px;padding-left:20px; padding-right:20px">退出</a></li>
+					<li style="height:0px;margin:0px;padding:0px;"class="cut"></li>
+					<li style="margin-top:0px;padding:0px;"><a href="" style="display: block;padding-top:5px;padding-left:20px; padding-right:20px">测试</a></li>
+				</ul>
+				<li><a href=''>更多</a></li>
+				<li>|</li>
+				</div>
+				<div class="login">
+				<li><a href='{{urlfor "CheckController.Reg"}}'>注册</a></li>
+				<li>|</li>
+				<li id="login">登录</li>
+				<li>|</li>
+				</div>
+				<li><a href="">游戏专区</a></li>
+				<li>|</li>
+				<li><a href="">社团入驻</a></li>
+				<li>|</li>
+				<li><a href="">作品区</a></li>
+				<li>|</li>
+				<li><a href="">讨论区</a></li>
+				<li>|</li>
+				<li><a href='{{urlfor "InformationController.Enter"}}'>动漫资讯</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="g-container">
+   		<div class="g-register">
+   			<div class="g-r-title">
+   				欢迎注册ACG动漫网
+   			</div>
+   			<form action='{{urlfor "CheckController.Reg"}}' method="post">
+				<div id="wizard">
+					<ul id="status">
+						<li class="active"><strong>1.</strong>创建账户</li>
+						<li><strong>2.</strong>填写联系信息</li>
+						<li><strong>3.</strong>完成</li>
+					</ul>
+
+					<div class="items">
+						<div class="page">
+			               <h3>创建一个账户<br/><em>请填写您的注册账户信息，用于登录。</em></h3>
+			               <p><label>昵称：</label><input type="text" class="input" id="user" name="nickname" /></p>
+			               <p><label>密码：</label><input type="password" class="input" id="pass" name="pwd" /></p>
+			               <p><label>确认密码：</label><input type="password" class="input" id="pass1" name="repwd" /></p>
+			               <div class="btn_nav">
+			                  <input type="button" class="next right" value="下一步&raquo;" />
+			               </div>
+			            </div>
+						<div class="page">
+			               <h3>邮箱认证<br/><em>请告诉我们您的联系方式。</em></h3>
+			               <p><label>E-mail：</label><input type="text" class="input" name="email" /></p>
+			               <p><div class="button">发送验证</div></p>
+			               <div class="btn_nav">
+			                  <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+			                  <input type="button" class="next right" value="下一步&raquo;" />
+			               </div>
+			            </div>
+						<div class="page">
+			               <h3>完成注册<br/><em>点击确定完成注册。</em></h3>
+			               <h4>ACG动漫网欢迎您！</h4>
+			               <p>请点击“确定”按钮完成注册。</p>
+			               <br/>
+			               <br/>
+			               <br/>
+			               <div class="btn_nav">
+			                  <input type="button" class="prev" style="float:left" value="&laquo;上一步" />
+			                  <input type="button" class="next right" id="sub" value="确定" />
+			               </div>
+			            </div>
+					</div>
+				</div>
+			</form>
+   		</div>
+	</div>
+	<div id="mfooter">
+			<div id="foot_con">
+				<div class="f_list serve_info">
+					<div class="kefu">
+						<span class="tel_ico"></span>
+						<p class="f20_f">40000000000</p>
+						<p class="f14_f mt4_f">ACG网热线</p>
+					</div>
+					<ol class="busines">
+						<li>周一至周日：08-00-00-00-00-0-0</li>
+					</ol>
+				</div>
+				<div class="f_list">
+					<h4>用户帮助</h4>
+					<ul>
+						<li><a href="">新手指南</a></li>
+						<li><a href="">网站地图</a></li>
+						<li><a href="">意见反馈</a></li>
+					</ul>
+				</div>
+				<div class="f_list">
+					<h4>关于我们</h4>
+					<ul>
+						<li><a href="">关于acg</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">联系方式</a></li>
+					</ul>
+				</div>
+				<div class="f_list">
+					<h4>分享</h4>
+					<ul>
+						<li><a href=""><span class="i_sina">&nbsp;</span>新浪微博</a></li>
+						<li><a href=""><span class="i_sina" style="background-position: -65px 0px;">&nbsp;</span>QQ空间</a></li>
+						<li><a href=""><span class="i_sina" style="background-position: -110px 0px;">&nbsp;</span>腾讯微博</a></li>
+					</ul>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微信</h4>
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微博</h4>					
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+				<div class="f_list qr_code">
+					<h4>中国书画报微视</h4>					
+					<a href=""><img src="/static/img/er.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+<script src="/static/js/jquery.cookie.js"></script>
+<script src="/static/js/jquery.get.js"></script>
+<script type="text/javascript">
+$("#login").click(function(){
+		$(".m-layer.z-show").fadeIn();
+	});
+	$(".u-btn-c4").click(function(){
+		$(".m-layer.z-show").fadeOut();
+	});
+	$(".lyclose").click(function(){
+		$(".m-layer.z-show").fadeOut();
+	});
+$(function(){
+	$("#wizard").scrollable({
+		onSeek: function(event,i){
+			$("#status li").removeClass("active").eq(i).addClass("active");
+		},
+		onBeforeSeek:function(event,i){
+			if(i==1){
+				var user = $("#user").val();
+				if(user==""){
+					alert("请输入用户名！");
+					return false;
+				}
+				var pwd = $("#pass").val();
+				var repwd = $("#pass1").val();
+				if(pwd==""){
+				    alert("请输入密码！");
+					return false;
+				}
+				if(pwd != repwd){
+				    alert("两次密码不一致！");
+					return false;
+				}
+			}
+		}
+	});
+	$("#sub").click(function(){
+		url = '{{urlfor "CheckController.Reg"}}'+"?"+$("form").serialize();
+		jQuery.post(url,{},function(result){
+			if("success" ==  result){
+				alert("成功");
+			}else{
+				alert("注册成功，请去邮箱激活");
+			}
+		});	
+	});
+});
+$(".more").hover(function(){
+		$(".menu").show();
+	},function(){
+		$(".menu").hide();
+	});
+	var test = $.query.get('get');
+	if(test){
+		alert(test);
+	}
+	if($.cookie('WOKUNAME')){
+		if($.cookie('WOKUNAME') == 'null'){
+		$(".login").show();
+		$(".more").hide();
+		$(".g-sd").hide();
+		}else{
+			$(".login").hide();
+		}
+	}
+	if(!$.cookie('WOKUNAME')){
+		$(".g-sd").hide();
+		$(".more").hide();
+	}
+</script>
+</body>
+</html>
